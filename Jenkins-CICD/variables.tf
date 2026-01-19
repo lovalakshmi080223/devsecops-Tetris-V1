@@ -8,7 +8,7 @@ variable "key_name" {
 }
 variable "instance_type" {
   description = "instance type for ec2"
-  default     = "t2.medium"
+  default     = "c7i-flex.large"
 }
 variable "ami_id" {
   description = "AMI for Ubuntu Ec2 instance"
@@ -17,13 +17,13 @@ variable "ami_id" {
 variable "bucket_name" {
   description = "The name of the S3 bucket to create"
   type        = string
-  default     = "purplehaze777"
+  default     = "argocd-lova-bkt"
 }
 
 variable "dynamodb_table" {
   description = "The name of the dynamodb table"
   type        = string
-  default     = "purplehaze777-dynamodb-table"
+  default     = "lova-tetris-dynamodb-table"
 }
 
 variable "acl" {
