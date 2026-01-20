@@ -4,7 +4,7 @@ variable "aws_region" {
 }
 variable "key_name" {
   description = " SSH keys to connect to ec2 instance"
-  default     = "purplehaze"
+  default     = "purplehaze11"
 }
 variable "instance_type" {
   description = "instance type for ec2"
@@ -17,13 +17,13 @@ variable "ami_id" {
 variable "bucket_name" {
   description = "The name of the S3 bucket to create"
   type        = string
-  default     = "argocd-lova-bkt"
+  default     = "argocd-lova-bkt11"
 }
 
 variable "dynamodb_table" {
   description = "The name of the dynamodb table"
   type        = string
-  default     = "lova-tetris-dynamodb-table"
+  default     = "lova-tetris-dynamodb-table11"
 }
 
 variable "acl" {
